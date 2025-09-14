@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body class="home-pagge">
+
+
+<!-- User Table -->
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Age</th>
+      <th>Phone</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="userTable"></tbody>
+</table>
+
+<!-- ✅ Hidden Edit Form -->
+<div id="editForm" style="display:none; margin-top:20px;">
+  <h3>Edit User</h3>
+  <input type="text" id="editName" placeholder="Edit Name">
+  <input type="email" id="editEmail" placeholder="Edit Email">
+  <input type="number" id="editAge" placeholder="Edit Age">
+  <button onclick="updateUser()">Update</button>
+</div>
+
+  
+  <button onclick="logout()">Logout</button>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
